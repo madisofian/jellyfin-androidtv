@@ -458,11 +458,6 @@ fun createDeviceProfile(
 			add(VideoRangeType.HDR10_PLUS)
 			if (!supportsHevcHDR10) add(VideoRangeType.HDR10)
 		}
-
-		if (KnownDefects.hevcDoviHdr10PlusBug) {
-			add(VideoRangeType.DOVI_WITH_HDR10_PLUS)
-			add(VideoRangeType.DOVI_WITH_ELHDR10_PLUS)
-		}
 	}
 
 	// Note: The codec profiles use a workaround to create correct behavior
